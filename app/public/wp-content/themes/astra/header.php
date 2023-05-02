@@ -62,3 +62,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div id="content" class="site-content">
 		<div class="ast-container">
 		<?php astra_content_top(); ?>
+<!-- ... -->
+<?php astra_content_top(); ?>
+<style>
+		.ast-primary-header-bar.ast-primary-header.main-header-bar.site-header-focus-item {
+    	background: #020122;
+	}
+
+	/* Change color of links in the header */
+
+
+
+	.sticky-header {
+	  position: -webkit-sticky;
+	  position: sticky;
+	  top: 0;
+	  z-index: 1000;
+	}
+</style>
+<!-- ... -->
+<script>
+  (function() {
+    var lastScrollTop = 0;
+    var header = document.querySelector('.site-header');
+    
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop) {
+        header.classList.remove('sticky-header');
+      } else {
+        header.classList.add('sticky-header');
+      }
+      
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  })();
+</script>
+</body>
+</html>
+

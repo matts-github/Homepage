@@ -45,11 +45,11 @@ get_header(); ?>
 /* Home page styles */
 
 div#content {
-    background: #1F1F1E;
+    background: #0A0A0A;
 }
 
 .entry-content.clear {
-    background: #1e293b; 
+    background: #0A0A0A; 
 }
 
 
