@@ -44,6 +44,11 @@ get_header(); ?>
 <style>
 /* Home page styles */
 
+p.has-background {
+    padding: 0;
+    line-height: 2rem;
+}
+
 div#content {
     background: #0A0A0A;
 }
@@ -55,7 +60,6 @@ div#content {
 
 .home .wp-block-buttons>.wp-block-button {
     margin-bottom: 10px;
-    margin-top: -27px;
     margin-left: 31px;
 }
 

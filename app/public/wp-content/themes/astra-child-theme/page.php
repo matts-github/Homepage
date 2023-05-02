@@ -96,6 +96,16 @@ label {
     margin-left: 5%;
 }
 
+/* Services Page */
+
+div#content {
+    background: #0A0A0A;
+}
+
+.entry-content.clear {
+    background: #0A0A0A;
+}
+
 
 @media screen and (min-width: 1200px) {
     
